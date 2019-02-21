@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.saksham.chatapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,42 +14,52 @@
         android:roundIcon="@drawable/ic_mood_black_24dp"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".ChatApp">
+        android:name=".ChatApp"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
         <service
-            android:name=".FirebaseMessagingService">
+            android:name=".FirebaseMessagingService"
+            tools:ignore="ExportedService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
 
-        <activity android:name=".Main2Activity">
+        <activity android:name=".Activity.Main2Activity"
+            tools:ignore="InnerclassSeparator">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity.MainActivity"
+            tools:ignore="InnerclassSeparator" />
         <activity
-            android:name=".Register"
-            android:parentActivityName=".MainActivity" />
+            android:name=".Activity.Register"
+            android:parentActivityName=".Activity.MainActivity"
+            tools:ignore="InnerclassSeparator" />
         <activity
-            android:name=".LoginScreen"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".SettingsActivity" />
+            android:name=".Activity.LoginScreen"
+            android:parentActivityName=".Activity.MainActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".Activity.SettingsActivity"
+            tools:ignore="InnerclassSeparator" />
         <activity
-            android:name=".StatusActivity"
-            android:parentActivityName=".SettingsActivity" />
+            android:name=".Activity.StatusActivity"
+            android:parentActivityName=".Activity.SettingsActivity"
+            tools:ignore="InnerclassSeparator" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity
-            android:name=".UsersActivity"
-            android:parentActivityName=".Main2Activity">
+            android:name=".Activity.UsersActivity"
+            android:parentActivityName=".Activity.Main2Activity"
+            tools:ignore="InnerclassSeparator">
 
         </activity>
-        <activity android:name=".ProfileActivity">
+        <activity android:name=".Activity.ProfileActivity"
+            tools:ignore="InnerclassSeparator">
             <intent-filter>
                 <action android:name="com.example.saksham.chatapp_TARGET_NOTIFICATION">
 
@@ -60,8 +71,9 @@
 
         </activity>
 
-        <activity android:name=".ChatActivity"
-            android:parentActivityName=".Main2Activity">
+        <activity android:name=".Activity.ChatActivity"
+            android:parentActivityName=".Activity.Main2Activity"
+            tools:ignore="InnerclassSeparator">
 
         </activity>
     </application>

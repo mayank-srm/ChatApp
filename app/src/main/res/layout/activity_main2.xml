@@ -6,14 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
+
     tools:context=".Main2Activity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
 
-        <include layout="@layout/app_bar_layout"
-        android:id="@+id/app_bar"/>
+        <include
+            layout="@layout/app_bar_layout"
+            android:id="@+id/app_bar"
+            />
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tab_bar"
@@ -27,10 +31,7 @@
         android:id="@+id/main_page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginTop="0dp">
+       >
 
     </android.support.v4.view.ViewPager>
 </RelativeLayout>
