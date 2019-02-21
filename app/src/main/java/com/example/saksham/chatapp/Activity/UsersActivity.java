@@ -1,4 +1,4 @@
-package com.example.saksham.chatapp;
+package com.example.saksham.chatapp.Activity;
 
 
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.saksham.chatapp.R;
+import com.example.saksham.chatapp.Users;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -57,7 +59,7 @@ public class UsersActivity extends AppCompatActivity {
         FirebaseRecyclerAdapter<Users, UsersViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Users, UsersViewHolder>(
 
                 Users.class,
-                R.layout.users_single_layout,
+                R.layout.user_single_layout,
                 UsersViewHolder.class,
                 mUsersDatabase
 

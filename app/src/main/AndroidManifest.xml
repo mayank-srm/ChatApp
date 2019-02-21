@@ -13,7 +13,7 @@
         android:roundIcon="@drawable/ic_mood_black_24dp"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".chatActivity">
+        android:name=".ChatApp">
 
         <service
             android:name=".FirebaseMessagingService">
@@ -50,9 +50,19 @@
         </activity>
         <activity android:name=".ProfileActivity">
             <intent-filter>
-                <action android:name="com.example.saksham.chatapp_TARGET_NOTIFICATION"></action>
-                <category android:name="android.intent.category.DEFAULT"></category>
+                <action android:name="com.example.saksham.chatapp_TARGET_NOTIFICATION">
+
+                </action>
+                <category android:name="android.intent.category.DEFAULT">
+
+                </category>
             </intent-filter>
+
+        </activity>
+
+        <activity android:name=".ChatActivity"
+            android:parentActivityName=".Main2Activity">
+
         </activity>
     </application>
 
