@@ -19,10 +19,8 @@ public class Main2Activity extends AppCompatActivity {
 
     private Toolbar mtoolbar;
     private FirebaseAuth mAuth;
-
     private ViewPager mViewPager;
     private SectionPagerAdapter nSectionsPagerAdapter;
-
     private TabLayout mTabLayout;
 
     @Override
@@ -30,19 +28,17 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-
-
         mAuth = FirebaseAuth.getInstance();
         mtoolbar =  findViewById(R.id.app_bar);
         setSupportActionBar(mtoolbar);
         getSupportActionBar().setTitle("Chat App");
 
-        mViewPager = (ViewPager) findViewById(R.id.main_page);
+        mViewPager = findViewById(R.id.main_page);
         nSectionsPagerAdapter =new SectionPagerAdapter(getSupportFragmentManager());
 
         mViewPager.setAdapter(nSectionsPagerAdapter);
 
-        mTabLayout = (TabLayout) findViewById(R.id.tab_bar);
+        mTabLayout = findViewById(R.id.tab_bar);
         mTabLayout.setupWithViewPager(mViewPager);
 
     }
@@ -78,7 +74,6 @@ public class Main2Activity extends AppCompatActivity {
         super.onOptionsItemSelected(item);
 
         if (item.getItemId() == R.id.logout) {
-
             FirebaseAuth.getInstance().signOut();
             Toast.makeText(Main2Activity.this, "SIGNED OUT SUCCESSFULLY", Toast.LENGTH_SHORT).show();
             Intent startIntent = new Intent(Main2Activity.this, LoginScreen.class);

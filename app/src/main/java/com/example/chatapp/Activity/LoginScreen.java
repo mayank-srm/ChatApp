@@ -38,9 +38,10 @@ public class LoginScreen extends Activity {
 
         email = findViewById(R.id.email);
         password= findViewById(R.id.pass);
-        mAuth = FirebaseAuth.getInstance();
         button = findViewById(R.id.login);
         progressBar=findViewById(R.id.progressBar3);
+
+        mAuth = FirebaseAuth.getInstance();
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -45,15 +45,7 @@ public class Register extends AppCompatActivity {
         password = findViewById(R.id.password);
         mAuth = FirebaseAuth.getInstance();
 
-
         mRegProgress = new ProgressDialog(Register.this);
-
-
-        //mtoolbar = (Toolbar) findViewById(R.id.app_bar);
-        //setSupportActionBar(mtoolbar);
-        //getSupportActionBar().setTitle("Create Account");
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         
         button.setOnClickListener(new View.OnClickListener() {

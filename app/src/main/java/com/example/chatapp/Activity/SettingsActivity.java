@@ -43,28 +43,15 @@ public class SettingsActivity extends AppCompatActivity {
 
     private DatabaseReference mUserDatabase;
     private FirebaseUser mCurrentUser;
-
-
     private CircleImageView mDisplayImage;
-    private TextView mName;
-    private TextView mStatus;
-
-    private Button mStatusBtn;
-    private Button mImageBtn;
-
+    private TextView mName,mStatus;
+    public Button mStatusBtn, mImageBtn;
     private Uri imageUri;
-
-
     private static final int GALLERY_PICK = 1;
-
     private StorageReference mImageStorage;
-
     private ProgressDialog mProgressDialog;
-    //Firebase
-
     FirebaseStorage storage;
     StorageReference storageReference;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,44 +61,28 @@ public class SettingsActivity extends AppCompatActivity {
         mDisplayImage = findViewById(R.id.settings_image);
         mName = findViewById(R.id.settings_name);
         mStatus = findViewById(R.id.settings_status);
-
         mStatusBtn = findViewById(R.id.settings_status_btn);
         mImageBtn = findViewById(R.id.settings_image_btn);
 
         mImageStorage = FirebaseStorage.getInstance().getReference();
-
         mCurrentUser = FirebaseAuth.getInstance().getCurrentUser();
-
         String current_uid = mCurrentUser.getUid();
-
 
         mUserDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(current_uid);
         mUserDatabase.keepSynced(true);
 
         mUserDatabase.addValueEventListener(new ValueEventListener() {
-            // @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 String name = dataSnapshot.child("name").getValue().toString();
-                final String image = dataSnapshot.child("image").getValue().toString();
                 String status = dataSnapshot.child("status").getValue().toString();
+                final String image = dataSnapshot.child("image").getValue().toString();
                 String thumb_image = dataSnapshot.child("thumb_image").getValue().toString();
 
                 mName.setText(name);
                 mStatus.setText(status);
-
-               Picasso.get().load(imageUri).placeholder(R.drawable.default_avatar).into(mDisplayImage);
-               mDisplayImage.setImageURI(imageUri);
-//
-//                if(!image.equals("default")) {
-//
-//
-//                    Picasso.get().load(image).networkPolicy(NetworkPolicy.OFFLINE)
-//                            .placeholder(R.drawable.default_avatar).into(mDisplayImage);
-//
-//                }
-
+                Picasso.get().load(imageUri).placeholder(R.drawable.default_avatar).into(mDisplayImage);
 
             }
 
@@ -163,8 +134,6 @@ public class SettingsActivity extends AppCompatActivity {
                 && data != null && data.getData() != null) {
 
             imageUri = data.getData();
-
-
 
                 CropImage.activity(imageUri)
                         .setAspectRatio(1, 1)
