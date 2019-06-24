@@ -1,4 +1,4 @@
-package com.example.saksham.chatapp.Activity;
+package com.example.chatapp.Activity;
 
 public class Messages {
 

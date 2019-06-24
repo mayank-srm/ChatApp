@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:128682887322:android:f78731b9f97f6553",
         "android_client_info": {
-          "package_name": "com.example.saksham.chatapp"
+          "package_name": "com.example.chatapp"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "128682887322-b097ti55u0vsgedjuf3uufqvc3edaukb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.saksham.chatapp",
+            "package_name": "com.example.chatapp",
             "certificate_hash": "854b040db3bd8b65b6c92770ae43d553734ab61f"
           }
         },
@@ -26,7 +26,7 @@
           "client_id": "128682887322-d3e7p8nc18a89a6snuikau44f5lq0mdi.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.saksham.chatapp",
+            "package_name": "com.example.chatapp",
             "certificate_hash": "70146f57c0b7d2f5175eb45d0ee7256e0bf9359b"
           }
         },

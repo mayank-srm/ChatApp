@@ -1,4 +1,4 @@
-package com.example.saksham.chatapp;
+package com.example.chatapp;
 
 public class Friends {
 

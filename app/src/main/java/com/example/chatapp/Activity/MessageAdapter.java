@@ -1,4 +1,4 @@
-package com.example.saksham.chatapp.Activity;
+package com.example.chatapp.Activity;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.saksham.chatapp.R;
+import com.example.chatapp.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

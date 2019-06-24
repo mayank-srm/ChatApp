@@ -1,11 +1,10 @@
-package com.example.saksham.chatapp;
+package com.example.chatapp;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 
 import androidx.core.app.NotificationCompat;
-
 import com.google.firebase.messaging.RemoteMessage;
 
 public class FirebaseMessagingService extends com.google.firebase.messaging.FirebaseMessagingService {

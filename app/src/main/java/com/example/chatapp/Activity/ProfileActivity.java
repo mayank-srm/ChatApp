@@ -1,4 +1,4 @@
-package com.example.saksham.chatapp.Activity;
+package com.example.chatapp.Activity;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.saksham.chatapp.R;
+import com.example.chatapp.R;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;

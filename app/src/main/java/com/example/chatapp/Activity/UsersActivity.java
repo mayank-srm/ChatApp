@@ -1,4 +1,4 @@
-package com.example.saksham.chatapp.Activity;
+package com.example.chatapp.Activity;
 
 
 import android.content.Context;
@@ -12,8 +12,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.saksham.chatapp.R;
-import com.example.saksham.chatapp.Users;
+import com.example.chatapp.R;
+import com.example.chatapp.Users;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;

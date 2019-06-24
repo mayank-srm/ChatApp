@@ -1,4 +1,4 @@
-package com.example.saksham.chatapp.Activity;
+package com.example.chatapp.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.saksham.chatapp.R;
+import com.example.chatapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View view) {
 
-                Intent register=new Intent(MainActivity.this, com.example.saksham.chatapp.Activity.Register.class);
+                Intent register=new Intent(MainActivity.this, com.example.chatapp.Activity.Register.class);
                 startActivity(register);
 
 

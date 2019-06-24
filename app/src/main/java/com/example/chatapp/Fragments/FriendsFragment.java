@@ -1,4 +1,4 @@
-package com.example.saksham.chatapp.Fragments;
+package com.example.chatapp.Fragments;
 
 
 import android.content.Context;
@@ -16,10 +16,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.saksham.chatapp.Activity.ChatActivity;
-import com.example.saksham.chatapp.Activity.ProfileActivity;
-import com.example.saksham.chatapp.Friends;
-import com.example.saksham.chatapp.R;
+import com.example.chatapp.Activity.ChatActivity;
+import com.example.chatapp.Activity.ProfileActivity;
+import com.example.chatapp.Friends;
+import com.example.chatapp.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;

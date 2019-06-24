@@ -1,4 +1,4 @@
-package com.example.saksham.chatapp.Activity;
+package com.example.chatapp.Activity;
 
 
 import androidx.fragment.app.Fragment;
@@ -16,15 +16,15 @@ class SectionPagerAdapter extends FragmentPagerAdapter {
 
         switch(position){
             case 0:
-                com.example.saksham.chatapp.Fragments.RequestsFragments requestsFragments = new com.example.saksham.chatapp.Fragments.RequestsFragments();
+                com.example.chatapp.Fragments.RequestsFragments requestsFragments = new com.example.chatapp.Fragments.RequestsFragments();
                 return requestsFragments;
 
             case 1:
-                com.example.saksham.chatapp.Fragments.ChatsFragment chatsFragment = new com.example.saksham.chatapp.Fragments.ChatsFragment();
+                com.example.chatapp.Fragments.ChatsFragment chatsFragment = new com.example.chatapp.Fragments.ChatsFragment();
                 return chatsFragment;
 
             case 2:
-                com.example.saksham.chatapp.Fragments.FriendsFragment friendsFragment = new com.example.saksham.chatapp.Fragments.FriendsFragment();
+                com.example.chatapp.Fragments.FriendsFragment friendsFragment = new com.example.chatapp.Fragments.FriendsFragment();
                 return friendsFragment;
 
             default:
