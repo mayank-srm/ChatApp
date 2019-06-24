@@ -1,10 +1,11 @@
 package com.example.saksham.chatapp.Activity;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 
-class SectionPagerAdapter extends FragmentPagerAdapter{
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+
+class SectionPagerAdapter extends FragmentPagerAdapter {
 
     public SectionPagerAdapter(FragmentManager fm) {
         super(fm);
